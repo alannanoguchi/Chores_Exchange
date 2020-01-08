@@ -14,17 +14,14 @@
 
     <!-- CUSTOM STYLES -->
     <link rel='stylesheet' href='styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
 <!-- NAVBAR -->
-
+<!-- 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Home</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
@@ -38,15 +35,44 @@
             </li>
         </ul>
     </div>
-</nav>
+</nav> -->
 
 
 <!-- HERO -->
-
-<h1>Chores Exchange</h1>
+<div class="jumbotron">
+    <h1 class="display-3" align="center">Chores Exchange Login</h1>
+    <div id="login">
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info"><font color ="#999">Welcome back</font></h3>
+                            <div class="form-group">
+                                <label for="email" class="text-info"><font color ="#999">Email:</font></label><br>
+                                <input type="text" name="email" id="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info"><font color ="#999">Password:</font></label><br>
+                                <input type="text" name="password" id="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="remember-me" class="text-info"><span><font color ="#999">Remember me</font></span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Login">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- BENEFITS -->
+
+<!-- FOOTER -->
+<div class="footer text-center">&copy; 2020 Alanna Noguchi 🦙</div>
 
 
 <!-- CALL TO ACTION -->
