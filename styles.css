@@ -1,6 +1,26 @@
+.navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.5rem 1rem;
+    margin-bottom: 40px;
+
+  }
+
 .jumbotron
 {
     height: 800px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 h1 {
@@ -10,7 +30,7 @@ h1 {
 
 body{
     color: #fff;
-    background: #63738a;
+    background: #95a4b8;
     font-family: 'Roboto', sans-serif;
 }
 .form-control{
@@ -25,7 +45,7 @@ body{
     border-radius: 3px;
 }
 .signup-form{
-    width: 400px;
+    width: 450px;
     margin: 0 auto;
     padding: 10px 0;
 }
@@ -77,6 +97,8 @@ body{
 }
 .signup-form .row div:first-child{
     padding-right: 10px;
+    margin-left: 15px;
+    margin-right: -14px;
 }
 .signup-form .row div:last-child{
     padding-left: 10px;
