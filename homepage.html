@@ -43,7 +43,7 @@
 
 <div class="jumbotron">
     <h1 class="display-3" align="center">WiFi Usage</h1>
-    <div id="piechart" align="center"></div>
+    <div id="piechart" align="center" style="margin-top: 50px"></div>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -62,7 +62,7 @@ function drawChart() {
 ]);
 
   // Optional; add a title and set the width and height of the chart
-  var options = {'title':'WiFi Usage', 'width':750, 'height':600};
+  var options = {'title':'WiFi Usage', 'width':650, 'height':500};
 
   // Display the chart inside the <div> element with id="piechart"
   var chart = new google.visualization.PieChart(document.getElementById('piechart'));
