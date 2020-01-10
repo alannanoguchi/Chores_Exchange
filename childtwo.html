@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>🤖Chores Exchange</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- BOOTSTRAP THEME -->
+    <link rel='stylsheet' href='https://bootswatch.com/4/journal/bootstrap.min.css'>
+
+    <!-- CUSTOM STYLES -->
+    <link rel='stylesheet' href='styles.css'>
+    <link href="https://fonts.googleapis.com/css?family=Sniglet&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">☰
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="homepage.html">WiFi Usage</a>
+                    <a class="dropdown-item" href="devices.html">Devices</a>
+                    <a class="dropdown-item" href="childone.html">Child 1</a>
+                    <a class="dropdown-item" href="#">Child 2</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- HERO -->
+
+<div class="jumbotron">
+    <h1 class="display-3" align="center">Child 2's iPad</h1>
+    <div style="margin-top: 80px">
+        <p style="float: left"><img src="https://i.dlpng.com/static/png/1724883_preview_preview.png" height="400px" width="350px" border="1px"></p>
+        <button type="button" class="btn btn-info" style="margin-top: 360px; margin-left: -215px">Update</button>
+        <button type="button" class="btn btn-danger" style="margin-top: 480px; margin-left: -115px">Remove Device</button>
+    </div>
+
+    <div style="margin-top: -520px; margin-left: 550px; color: #4e819e">
+        <form action="usageadded.html" method="get">
+            <legend>Chores List:</legend>
+            <div>
+                    <input type="checkbox">
+                    <label for="item">Sweep</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="item">Wash Dishes</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="item">Set Table</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="item">Vacuum</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="item">Take Out the Trash</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="item">Make Bed</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="item">Walk Dog</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="item">Pick-up After Dog</label>
+                </div> 
+                <div style="margin-top:10px">
+                    <button type="button" class="btn btn-success"><a href="usageadded.html" style="color: white">Add</a></button>
+                </div>
+        </form>
+    </div>
+
+
+
+    <div id="piechart" align="center" style="margin-top: -350px; margin-left: 900px">
+
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+            <script type="text/javascript">
+            // Load google charts
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+    
+            // Draw the chart and set the chart values
+            function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ["Available", 17],
+            ["Used", 3]
+            ]);
+    
+            // Optional; add a title and set the width and height of the chart
+            var options = {'title':'WiFi Usage', 'width':650, 'height':500, 'backgroundColor':'rgb(249, 250, 245)'};
+    
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+            }
+            </script>
+        </div>
+</div>
+
+
+<!-- BENEFITS -->
+
+<!-- FOOTER -->
+<div class="footer text-center">&copy; 2020 Alanna Noguchi 🦙</div>
+
+
+<!-- CALL TO ACTION -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
