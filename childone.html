@@ -30,8 +30,8 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="homepage.html">WiFi Usage</a>
                     <a class="dropdown-item" href="devices.html">Devices</a>
-                    <a class="dropdown-item" href="childone.html">Child 1</a>
-                    <a class="dropdown-item" href="childtwo.html">Child 2</a>
+                    <a class="dropdown-item" href="#">Child 1</a>
+                    <a class="dropdown-item" href="#">Child 2</a>
                 </div>
             </li>
         </ul>
@@ -42,34 +42,20 @@
 <!-- HERO -->
 
 <div class="jumbotron">
-    <h1 class="display-3" align="center">WiFi Usage</h1>
-    <div id="piechart" align="center" style="margin-top: 50px"></div>
-
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-<script type="text/javascript">
-// Load google charts
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-// Draw the chart and set the chart values
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-  ['Task', 'Hours per Day'],
-  ["Child 1's iPad", 8],
-  ["Child 2's iPad", 6],
-  ["Miscellaneous", 10]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'WiFi Usage', 'width':650, 'height':500};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
-}
-</script>
+    <h1 class="display-3" align="center">Devices</h1>
+    <div style="margin-top: 80px">
+        <p style="position: relative; left: 350px; float: left"><img src="https://i.dlpng.com/static/png/1724883_preview_preview.png" height="400px" width="350px" border="1px"></p>
+        <p style="position: relative; left: 500px; float: left"><img src="https://i.dlpng.com/static/png/1724883_preview_preview.png" height="400px" width="350px" border="1px"></p>
+    </div>
+    <div>
+        <button type="button" class="btn btn-info" style="margin-top: 360px; margin-left: -235px" href="childone.html">View Device</button>
+        <button type="button" class="btn btn-info" style="margin-top: 360px; margin-left: 390px">View Device</button>
+        <button type="button" class="btn btn-danger" style="margin-top: 480px; margin-left: -640px">Remove Device</button>
+        <button type="button" class="btn btn-danger" style="margin-top: 480px; margin-left: 365px">Remove Device</button>
+    </div>
+    
 </div>
+
 
 
 <!-- BENEFITS -->
